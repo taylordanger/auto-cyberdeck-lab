@@ -1,4 +1,6 @@
-# Project Overview
+# README Template
+
+## Project Overview
 This project aims to build useful tools for Taylor's hardware/software projects.
 
 ## Roadmap
@@ -9,9 +11,3 @@ This project aims to build useful tools for Taylor's hardware/software projects.
 - Wokwi experiment templates
 - local Ollama coding tools
 - hardware inventory tracker
-
-## Current Priority
-Start small. Improve documentation, add tiny scripts, and create tests before attempting bigger features.
-
-# Local Ollama Coding Tools
-The project includes tools for interacting with the local Ollama server.
