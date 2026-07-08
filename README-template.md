@@ -1,10 +1,15 @@
-# README Template
+# Project Overview
+This repository contains tools for managing hardware/software projects.
 
-This is a template for project READMEs. It includes sections for:
-- Project overview
-- Installation instructions
-- Usage examples
-- Contributing guidelines
-- License information
+# Roadmap
+## Mission
+Slowly build useful tools for Taylor's hardware/software projects.
 
-Feel free to customize this template to fit your specific needs.
+Good directions:
+- 60x9 LED bitmap generator
+- ESP32/e-paper UI helpers
+- FreeCAD cyberdeck case notes
+- pinout documentation
+- Wokwi experiment templates
+- local Ollama coding tools
+- hardware inventory tracker
