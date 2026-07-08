@@ -210,7 +210,7 @@ def apply_plan(plan: dict[str, Any]) -> list[str]:
 
 
 def fail_note(reason: str) -> None:
-    now = dt.datetime.now(dt.UTC).isoformat()
+    now = dt.datetime.now(dt.timezone.utc).isoformat()
     old = read(DECISIONS)
     write(DECISIONS, old + f"\n\n## {now}\n\nAutonomous run failed before commit.\n\n```text\n{reason[-3000:]}\n```\n")
 
@@ -230,7 +230,7 @@ def commit(message: str) -> None:
 def main() -> int:
     state = load_state()
     state["runs"] = int(state.get("runs", 0)) + 1
-    state["last_started_at"] = dt.datetime.now(dt.UTC).isoformat()
+    state["last_started_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
     save_state(state)
 
     if int(state.get("consecutive_failures", 0)) >= 3:
@@ -254,14 +254,14 @@ def main() -> int:
             raise RuntimeError("Tests/checks failed; refusing to commit.")
         state["consecutive_failures"] = 0
         state["last_summary"] = str(plan.get("summary", ""))
-        state["last_finished_at"] = dt.datetime.now(dt.UTC).isoformat()
+        state["last_finished_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
         save_state(state)
         commit(str(plan.get("commit_message") or "autonomous update"))
         return 0
     except Exception as exc:
         state["consecutive_failures"] = int(state.get("consecutive_failures", 0)) + 1
         state["last_error"] = str(exc)
-        state["last_finished_at"] = dt.datetime.now(dt.UTC).isoformat()
+        state["last_finished_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
         save_state(state)
         fail_note(str(exc))
         print(f"ERROR: {exc}", file=sys.stderr)
