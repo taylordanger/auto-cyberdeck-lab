@@ -1,21 +1,21 @@
 # README Template
 
-## Project Title
+## Project Description
 
-A brief description of the project.
+Briefly describe the project.
 
 ## Installation
 
-Instructions on how to install the project.
+Describe how to install the project.
 
 ## Usage
 
-How to use the project.
+Provide usage instructions.
 
 ## Contributing
 
-Contributing guidelines.
+Explain how to contribute to the project.
 
 ## License
 
-License information.
+Specify the license for the project.
