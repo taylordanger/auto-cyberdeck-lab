@@ -1,2 +1,6 @@
 # Ignore macOS system files
 .DS_Store
+
+# Local scheduler logs and locks
+forge/*.log
+forge/run.lock/

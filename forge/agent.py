@@ -117,7 +117,7 @@ def ollama(prompt: str) -> str:
         "model": OLLAMA_MODEL,
         "prompt": prompt,
         "stream": False,
-        "options": {"temperature": 0.2, "num_ctx": 16384},
+        "options": {"temperature": 0.2, "num_ctx": 8192},
     }
     req = urllib.request.Request(
         OLLAMA_URL,

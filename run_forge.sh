@@ -5,12 +5,12 @@ cd "/Users/darkstar/autonomous-cyberdeck-lab/autonomous-server-agent-starter"
 
 LOCKDIR="/Users/darkstar/autonomous-cyberdeck-lab/autonomous-server-agent-starter/forge/run.lock"
 
-if ! mkdir "" 2>/dev/null; then
+if ! mkdir "$LOCKDIR" 2>/dev/null; then
   echo "Forge is already running. Exiting."
   exit 0
 fi
 
-trap 'rmdir ""' EXIT
+trap 'rmdir "/Users/darkstar/autonomous-cyberdeck-lab/autonomous-server-agent-starter/forge/run.lock" 2>/dev/null || true' EXIT
 
 git checkout ai/m3-worker
 
@@ -18,7 +18,7 @@ if git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then
   git pull --rebase --autostash
 fi
 
-export OLLAMA_MODEL=qwen2.5-coder:14b
+export OLLAMA_MODEL=qwen2.5-coder:7b
 export AUTO_COMMIT=1
 
 nice -n 8 /usr/bin/python3 forge/agent.py

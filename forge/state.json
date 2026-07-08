@@ -1,9 +1,10 @@
 {
-  "consecutive_failures": 0,
-  "last_finished_at": "2026-07-08T08:03:22.992910+00:00",
-  "last_started_at": "2026-07-08T08:02:34.448716+00:00",
+  "consecutive_failures": 2,
+  "last_error": "Tests/checks failed; refusing to commit.",
+  "last_finished_at": "2026-07-08T15:33:20.648315+00:00",
+  "last_started_at": "2026-07-08T15:33:01.848283+00:00",
   "last_summary": "Update README-template.md with project overview and roadmap",
   "mode": "manual-first",
-  "runs": 24,
+  "runs": 26,
   "version": 1
 }
