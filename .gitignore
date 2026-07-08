@@ -1,10 +1,2 @@
-.env
-*.key
-*.pem
-id_rsa
-id_ed25519
-__pycache__/
-*.pyc
-.venv/
-venv/
-forge/run.log
+# Ignore macOS system files
+.DS_Store
