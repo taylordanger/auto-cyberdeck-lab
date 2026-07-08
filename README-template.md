@@ -1,21 +1,16 @@
-# README Template
+# Project README Template
 
-## Project Description
+## Overview
+This repository is designed to help with various hardware and software projects.
 
-Briefly describe the project.
+## Roadmap
+- 60x9 LED bitmap generator
+- ESP32/e-paper UI helpers
+- FreeCAD cyberdeck case notes
+- pinout documentation
+- Wokwi experiment templates
+- local Ollama coding tools
+- hardware inventory tracker
 
-## Installation
-
-Describe how to install the project.
-
-## Usage
-
-Provide usage instructions.
-
-## Contributing
-
-Explain how to contribute to the project.
-
-## License
-
-Specify the license for the project.
+## Current Priority
+Start small. Improve documentation, add tiny scripts, and create tests before attempting bigger features.
