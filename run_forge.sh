@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -e
 
-cd /Users/darkstar/Downloads/autonomous-server-agent-starter
+cd "/Users/darkstar/autonomous-cyberdeck-lab/autonomous-server-agent-starter"
 
 git checkout ai/m3-worker
 
