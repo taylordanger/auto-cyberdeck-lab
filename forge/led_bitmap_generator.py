@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 
-def generate_led_bitmap(width, height):
-    return [[0] * width for _ in range(height)]
+import numpy as np
+from PIL import Image
+
+def generate_led_bitmap(width=60, height=9):
+    bitmap = np.zeros((height, width), dtype=np.uint8)
+    for y in range(height):
+        for x in range(width):
+            if (x + y) % 2 == 0:
+                bitmap[y, x] = 255
+    return Image.fromarray(bitmap)
 
 if __name__ == '__main__':
-    bitmap = generate_led_bitmap(60, 9)
-    for row in bitmap:
-        print(' '.join(str(pixel) for pixel in row))
+    img = generate_led_bitmap()
+    img.save('led_bitmap.png')
