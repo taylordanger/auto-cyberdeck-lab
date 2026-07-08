@@ -1,19 +1,11 @@
-import py_compile
-from pathlib import Path
-import unittest
+#!/usr/bin/env python3
 
+import subprocess
+import os
 
-class PythonCompileTests(unittest.TestCase):
-    def test_forge_python_files_compile(self):
-        repo_root = Path(__file__).resolve().parents[1]
-        python_files = sorted((repo_root / "forge").glob("*.py"))
+def test_python_files_compile():
+    result = subprocess.run(['python3', '-m', 'compileall', '.'], capture_output=True, text=True)
+    assert result.returncode == 0, f'Compilation failed: {result.stderr}'
 
-        self.assertTrue(python_files, "Expected at least one Python file in forge/")
-
-        for path in python_files:
-            with self.subTest(path=str(path)):
-                py_compile.compile(str(path), doraise=True)
-
-
-if __name__ == "__main__":
-    unittest.main()
+if __name__ == '__main__':
+    test_python_files_compile()
