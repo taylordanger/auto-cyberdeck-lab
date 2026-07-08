@@ -4,3 +4,7 @@
 # Local scheduler logs and locks
 forge/*.log
 forge/run.lock/
+
+# Python cache files
+__pycache__/
+*.pyc
