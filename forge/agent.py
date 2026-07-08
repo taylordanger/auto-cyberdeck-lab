@@ -20,7 +20,7 @@ CHANGELOG = ROOT / "CHANGELOG.md"
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://127.0.0.1:11434/api/generate")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5-coder:7b")
 AUTO_COMMIT = os.environ.get("AUTO_COMMIT", "1") == "1"
-MAX_FILES = 5
+MAX_FILES = 8
 MAX_FILE_CHARS = 30000
 
 BLOCKED_EXACT = {".env", ".git/config"}
@@ -117,7 +117,7 @@ def ollama(prompt: str) -> str:
         "model": OLLAMA_MODEL,
         "prompt": prompt,
         "stream": False,
-        "options": {"temperature": 0.2, "num_ctx": 8192},
+        "options": {"temperature": 0.2, "num_ctx": 16384},
     }
     req = urllib.request.Request(
         OLLAMA_URL,
