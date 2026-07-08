@@ -1,5 +1,5 @@
 # Project Overview
-This repository contains tools for local Ollama coding.
+This repository contains tools for local development and automation, focusing on hardware/software projects.
 
 # Roadmap
 ## Mission
@@ -13,3 +13,6 @@ Good directions:
 - Wokwi experiment templates
 - local Ollama coding tools
 - hardware inventory tracker
+
+## Current priority
+Start small. Improve documentation, add tiny scripts, and create tests before attempting bigger features.
