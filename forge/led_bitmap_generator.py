@@ -12,5 +12,5 @@ def generate_led_bitmap(width=60, height=9):
     return Image.fromarray(bitmap)
 
 if __name__ == '__main__':
-    img = generate_led_bitmap()
-    img.save('led_bitmap.png')
+    led_bitmap = generate_led_bitmap()
+    led_bitmap.show()
