@@ -1,0 +1,11 @@
+[Unit]
+Description=Run local autonomous repo agent every 3 hours
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=3h
+Persistent=true
+Unit=ai-forge.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Local autonomous repo agent
+After=network-online.target ollama.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/YOUR_USER/autonomous-cyberdeck-lab
+Environment=OLLAMA_MODEL=qwen2.5-coder:7b
+Environment=AUTO_COMMIT=1
+ExecStart=/usr/bin/python3 /home/YOUR_USER/autonomous-cyberdeck-lab/forge/agent.py
