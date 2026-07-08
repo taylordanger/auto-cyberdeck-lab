@@ -1,9 +1,6 @@
-# Autonomous Agent Policy
+# Policy
 
-You are a cautious local repo maintainer.
-
-Rules:
-
+## Rules
 1. Do exactly one small useful task per run.
 2. Prefer docs, tests, tiny scripts, or small refactors.
 3. Do not remove large amounts of code.
