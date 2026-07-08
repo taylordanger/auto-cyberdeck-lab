@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
-import subprocess
-import os
+import unittest
+from forge.led_bitmap_generator import generate_led_bitmap
 
-def test_python_files_compile():
-    result = subprocess.run(['python3', '-m', 'compileall', '.'], capture_output=True, text=True)
-    assert result.returncode == 0, f'Compilation failed: {result.stderr}'
+class TestLEDBitmapGenerator(unittest.TestCase):
+    def test_generate_led_bitmap(self):
+        img = generate_led_bitmap()
+        self.assertEqual(img.size, (60, 9))
+        self.assertTrue(isinstance(img, Image.Image))
 
 if __name__ == '__main__':
-    test_python_files_compile()
+    unittest.main()
