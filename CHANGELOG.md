@@ -17,3 +17,7 @@ All notable autonomous changes should be recorded here.
 ## 2026-07-09T14:00:00.000000+00:00
 
 - Added a simple hardware inventory template.
+
+## 2026-07-09T15:00:00.000000+00:00
+
+- Added a FreeCAD case design checklist.

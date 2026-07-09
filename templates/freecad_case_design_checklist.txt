@@ -1,0 +1,10 @@
+# FreeCAD Case Design Checklist
+
+- [ ] Define project scope and requirements
+- [ ] Gather necessary dimensions and specifications
+- [ ] Create initial sketch in FreeCAD
+- [ ] Extrude or revolve to form the case body
+- [ ] Add mounting holes for components
+- [ ] Ensure proper ventilation and cooling design
+- [ ] Test fit with actual components
+- [ ] Review and finalize design
