@@ -18,7 +18,7 @@ if git rev-parse --abbrev-ref --symbolic-full-name @{u} >/dev/null 2>&1; then
   git pull --rebase --autostash
 fi
 
-export OLLAMA_MODEL=qwen2.5-coder:7b
+export OLLAMA_MODEL=qwen2.5-coder:14b
 export AUTO_COMMIT=1
 
 nice -n 8 /usr/bin/python3 forge/agent.py
