@@ -8,3 +8,9 @@ forge/run.lock/
 # Python cache files
 __pycache__/
 *.pyc
+
+# Local runtime junk
+__pycache__/
+*.pyc
+forge/*.log
+forge/run.lock/
