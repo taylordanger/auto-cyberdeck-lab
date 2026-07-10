@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
 import unittest
-from forge.led_bitmap_generator import generate_led_bitmap
+from forge import led_bitmap_generator
 
 class TestLedBitmapGenerator(unittest.TestCase):
     def test_generate_led_bitmap(self):
-        bitmap = [[0, 1], [1, 0]]
-        result = generate_led_bitmap(bitmap)
+        result = led_bitmap_generator.generate_led_bitmap('test')
         self.assertEqual(result, 'Generated Bitmap')
