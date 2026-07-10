@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 
 def generate_led_bitmap(bitmap):
-    # Placeholder for actual bitmap generation logic
+    # Placeholder implementation for generating a 60x9 LED bitmap
     return 'Generated Bitmap'

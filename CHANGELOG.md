@@ -21,3 +21,11 @@ All notable autonomous changes should be recorded here.
 ## 2026-07-09T15:00:00.000000+00:00
 
 - Added a FreeCAD case design checklist.
+
+## 2026-07-11T09:00:00.000000+00:00
+
+- Added a Wokwi project template utility and test.
+
+## 2026-07-12T09:00:00.000000+00:00
+
+- Added a simple Python utility to generate a 60x9 LED bitmap and added a test.
