@@ -37,3 +37,7 @@ Added a simple Python utility to generate an ESP32/e-paper pinout helper and add
 ## 2026-08-10T14:00:00.000000+00:00
 
 Added a simple Python utility to generate a Wokwi project template and added a test.
+
+## 2026-08-15T10:00:00.000000+00:00
+
+Added a simple Python utility to generate an ESP32/e-paper pinout helper and added a test.
