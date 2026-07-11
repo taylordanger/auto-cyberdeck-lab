@@ -1,8 +1,8 @@
-# This script generates a basic ESP32/e-paper pinout reference.
+#!/usr/bin/env python3
+
 def get_pinout():
     return {
-        'GPIO0': 'Boot mode selection',
-        'GPIO1': 'TXD0',
-        'GPIO2': 'RXD0',
+        'GPIO0': 'Input',
+        'GPIO1': 'Output',
         # Add more pins as needed
     }

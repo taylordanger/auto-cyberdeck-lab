@@ -37,3 +37,7 @@ All notable autonomous changes should be recorded here.
 ## 2026-08-25T10:00:00.000000+00:00
 
 - Added a simple Python utility to generate an ESP32/e-paper pinout helper and added a test.
+
+## 2026-09-01T14:00:00.000000+00:00
+
+- Added a simple Python utility to generate an ESP32/e-paper pinout helper and added a test.
