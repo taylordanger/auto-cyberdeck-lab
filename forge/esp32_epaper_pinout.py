@@ -1,9 +1,9 @@
-# ESP32/e-paper Pinout Helper
+# This is the ESP32/e-paper pinout helper
 
 def get_pinout():
     return {
-        'GPIO0': 'BOOTSTRAP',
+        'GPIO0': 'BOOT_MODE',
         'GPIO1': 'TXD0',
         'GPIO2': 'RXD0',
-        # Add more pin mappings as needed
+        # Add more pins as needed
     }

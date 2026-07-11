@@ -5,7 +5,7 @@ class TestESP32EpaperPinout(unittest.TestCase):
     def test_get_pinout(self):
         pinout = esp32_epaper_pinout.get_pinout()
         self.assertIn('GPIO0', pinout)
-        self.assertEqual(pinout['GPIO0'], 'BOOTSTRAP')
+        self.assertEqual(pinout['GPIO0'], 'BOOT_MODE')
 
 if __name__ == '__main__':
     unittest.main()
