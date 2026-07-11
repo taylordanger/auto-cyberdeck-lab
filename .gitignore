@@ -16,3 +16,6 @@ forge/*.log
 forge/run.lock/
 *.py[cod]
 /led_bitmap.png
+forge/forge.db
+forge/forge.db-shm
+forge/forge.db-wal
