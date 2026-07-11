@@ -29,3 +29,11 @@ Added a test for the hardware inventory template generator.
 ## 2026-10-15T14:00:00.000000+00:00
 
 Added a simple Python utility to generate a Wokwi project template and added a test.
+
+## 2026-10-20T18:30:00.000000+00:00
+
+Added a simple Python utility to generate a FreeCAD case design checklist and added a test.
+
+## 2026-10-25T09:00:00.000000+00:00
+
+Added a simple Python utility to generate a FreeCAD case design checklist and added a test.
