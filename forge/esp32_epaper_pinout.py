@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 
-def generate_pinout():
+def get_esp32_epaper_pinout():
     return {
-        'GPIO0': 'BOOTSTRAP',
-        'GPIO1': 'TXD0',
-        'GPIO2': 'RXD0',
-        # Add more pin mappings as needed
+        'GPIO0': 'Reset',
+        'GPIO1': 'Deep Sleep',
+        'GPIO2': 'Boot Mode',
+        'GPIO4': 'Busy',
+        'GPIO5': 'CS',
+        'GPIO10': 'DC',
+        'GPIO13': 'MOSI',
+        'GPIO14': 'CLK',
+        'GPIO15': 'RST'
     }
