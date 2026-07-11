@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
-def generate_wokwi_template(project_name):
+def generate_wokwi_template():
     return {
-        "name": project_name,
-        "components": [],
-        "connections": []
+        "project": {
+            "name": "New Wokwi Project",
+            "description": "A template project for Wokwi",
+            "parts": []
+        }
     }
