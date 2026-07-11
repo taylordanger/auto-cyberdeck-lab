@@ -14,3 +14,5 @@ __pycache__/
 *.pyc
 forge/*.log
 forge/run.lock/
+*.py[cod]
+/led_bitmap.png

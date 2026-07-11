@@ -1,2 +1,3 @@
-Part Number,Description,Quantity,Supplier
-,,,,
+Part Number,Quantity,Description
+PN001,10,Resistor 1k Ohm
+PN002,5,Capacitor 1uF

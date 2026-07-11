@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import unittest
 from forge.led_bitmap_generator import generate_led_bitmap
 
