@@ -1,3 +1,9 @@
-# This script generates the ESP32/e-paper pinout documentation.
-def generate_pinout():
-    return "ESP32/e-paper Pinout Documentation"
+#!/usr/bin/env python3
+
+def get_pinout():
+    return {
+        'GPIO0': 'BOOT',
+        'GPIO1': 'TXD',
+        'GPIO2': 'RXD',
+        # Add more pin mappings as needed
+    }
