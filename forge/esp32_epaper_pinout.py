@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-
-def get_pinout():
-    return {
-        'GPIO0': 'Input',
-        'GPIO1': 'Output',
-        # Add more pins as needed
-    }
+# This script generates the ESP32/e-paper pinout documentation.
+def generate_pinout():
+    return "ESP32/e-paper pinout documentation"
