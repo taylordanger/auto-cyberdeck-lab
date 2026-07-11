@@ -1,10 +1,10 @@
 {
-  "consecutive_failures": 0,
-  "last_error": "Tests/checks failed; refusing to commit.",
-  "last_finished_at": "2026-07-11T04:18:22.920109+00:00",
-  "last_started_at": "2026-07-11T04:16:39.354849+00:00",
+  "consecutive_failures": 1,
+  "last_error": "<urlopen error [Errno 111] Connection refused>",
+  "last_finished_at": "2026-07-11T15:33:11.989164+00:00",
+  "last_started_at": "2026-07-11T15:33:11.865415+00:00",
   "last_summary": "Add a simple Python utility to generate an ESP32/e-paper pinout helper and added a test",
   "mode": "manual-first",
-  "runs": 129,
+  "runs": 130,
   "version": 1
 }
