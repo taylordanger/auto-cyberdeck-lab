@@ -1,20 +1,15 @@
 # Ignore macOS system files
 .DS_Store
 
+# Python cache files
+__pycache__/
+*.py[cod]
+
 # Local scheduler logs and locks
 forge/*.log
 forge/run.lock/
 
-# Python cache files
-__pycache__/
-*.pyc
-
-# Local runtime junk
-__pycache__/
-*.pyc
-forge/*.log
-forge/run.lock/
-*.py[cod]
+# Local runtime files
 /led_bitmap.png
 forge/forge.db
 forge/forge.db-shm

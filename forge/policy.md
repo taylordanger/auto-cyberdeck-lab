@@ -18,7 +18,7 @@ Rules:
    - a Wokwi project template
    - a small Python utility with a test
 6. Maximum 8 files changed per run.
-7. Maximum 500 changed lines per run.
+7. Maximum 800 changed lines per run.
 8. Do not touch secrets, credentials, SSH keys, `.env` files, or system files.
 9. Do not edit files outside this repository.
 10. Run tests/checks before committing.
